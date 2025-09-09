@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEC Garage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logoUTEC.png" alt="Logo UTEC" class="logo">
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="seguridad.html">Políticas de Seguridad</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="https://affluences.com/en/sites/makerspaces-utec" class="btn-reservar">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Componentes Electrónicos</h1><br>
+        <p>Explora los componentes disponibles en el laboratorio. Usa el buscador para encontrar lo que necesitas.</p>
+        <p>Recuerda que todos los préstamos se realizan con <strong>CARNET UNIVERSITARIO VIGENTE</strong>. </p>
+
+        <!-- Buscador -->
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Buscar componente...">
+        </div>
+        <!-- Categorías -->
+        <div class="categorias">
+            <button data-category="all" class="categoria-btn active">Todos</button>
+            <button data-category="actuadores" class="categoria-btn">Actuadores</button>
+            <button data-category="Placa de Desarrollo" class="categoria-btn">Placa de Desarrollo</button>
+            <button data-category="sensores" class="categoria-btn">Sensores</button>
+            <button data-category="capacitores" class="categoria-btn">Capacitores</button>
+
+        </div>
+
+        <!-- Grid de Componentes -->
+        <section class="componentes-grid">
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>Arduino UNO</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status disponible">Disponible</span>
+            </div>
+
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>Arduino Nano</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status disponible">Disponible</span>
+            </div>
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>Arduino Mega</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status disponible">Disponible</span>
+            </div>
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>ESP32</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status disponible">Disponible</span>
+            </div>
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>ESP32-CAM</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+
+            <div class="componente-card" data-category="Placa de Desarrollo">
+                <h3>Raspberry Pi</h3>
+                <p>Placa de Desarrollo para prototipado rápido.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+
+            <!------ SENSORES ------ -->
+            <div class="componente-card" data-category="Sensores">
+                <h3>Fotoresistencia LDR</h3>
+                <p>Utilizado para detectar luz.</p>
+                <span class="status disponible">Disponible</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor de Temperatura LM35</h3>
+                <p>Módulo para medir temperatura.</p>
+                <span class="status agotado">Agotado</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor Infrarrojo TCRT5000</h3>
+                <p>Detecta objetos y líneas usando luz infrarroja.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor Infrarrojo CNY70</h3>
+                <p>Sensor reflexivo que detecta objetos cercanos.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Módulo Sensor de Humedad DHT11</h3>
+                <p>Medir temperatura y humedad del aire.</p>
+                <span class="status agotado">Agotado</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor Detector de Gotas YL-83</h3>
+                <p>Detecta agua sobre la superficie.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor de Gas MQ-9</h3>
+                <p>Detecta gas CO2.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+            <div class="componente-card" data-category="Sensores">
+                <h3>Sensor de Gas MQ-4</h3>
+                <p>Detecta gas metano, gas natural y GLP.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+
+            <!------ ACTUADORES  ------ -->
+            <div class="componente-card" data-category="Actuadores">
+                <h3>Motor DC</h3>
+                <p>.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+            <div class="componente-card" data-category="Actuadores">
+                <h3>Servomotor SG-90</h3>
+                <p>Motor pequeño con control de ángulo preciso.</p>
+                <span class="status agotado">Agotado</span>
+            </div>
+            <div class="componente-card" data-category="Actuadores">
+                <h3>Servomotor MG90S</h3>
+                <p>Motor pequeño con control de ángulo preciso.</p>
+                <span class="status pocas">Pocas unidades</span>
+            </div>
+
+            <!------ RESISTENCIAS ------ -->
+            <div class="componente-card" data-category="">
+                <h3>Resistencia 10Ω</h3>
+                <p>Usada en circuitos de baja potencia.</p>
+                <span class="status revisar">Revisar por disponibilidad</span>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <h2 style="text-align: center;">¿No encuentras algun componente?</h2>
+        <p style="text-align: center;">Puedes consultar a los laboratorios de Ing. Mecatrónica y Electrónica:
+            L201, L414 y L409.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoUTEC.png" alt="Logo UTEC">
+                <p>UTEC Garage - Innovación y Prototipado</p>
+                <p>Jiron Medrano Silva 165, Barranco, Lima</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="seguridad.html">Políticas de Seguridad</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="preguntas.html">Preguntas Frecuentes</a></li><br></li>
+                    <li><a href="https://affluences.com/en/sites/makerspaces-utec" class="btn-reservar">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>Email: <a href="mailto:utecgarage@utec.edu.pe" style="color: lightblue;">garage@utec.edu.pe</a></p>
+                <p>Responsables de Laboratorio: </p>
+                <ul style="padding-left: 20px;">
+                    <li><a href="mailto:rcastro@utec.edu.pe" style="color: lightblue;">rcastro@utec.edu.pe</a></li>
+                    <li><a href="mailto:avasqueze@utec.edu.pe" style="color: lightblue;">avasqueze@utec.edu.pe</a></li>
+                </ul><br>
+                <p> Departamento de Ingenieria Mecánica y de la Energía </p>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 UTEC Garage. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
